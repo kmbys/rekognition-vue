@@ -9,15 +9,15 @@
   <div id="app">
     <div>
       <div class="siimple-navbar siimple-navbar--extra-large siimple-navbar--primary">
-          <div class="siimple-navbar-title">Image Classification Example</div>
-          <div class="siimple-navbar-subtitle">ITA</div>
+          <div class="siimple-navbar-title">画像のやつ</div>
+          <div class="siimple-navbar-subtitle">Yuki</div>
       </div>
       
       <div class="siimple-content siimple-content--extra-large">
           <div class="siimple-grid">
               <div class="siimple-grid-row">
                   <div class="siimple-grid-col siimple-grid-col--6 siimple-grid-col--sm-6">
-                      <div class="siimple-h2">Select Image file</div>
+                      <div class="siimple-h2">写真を選んでね</div>
                     	<input type="file" id="file" v-on:change="onFileChange">
 
                       <div class="siimple-content siimple-content--Medium">
@@ -29,14 +29,9 @@
                   </div>
 
                   <div class="siimple-grid-col siimple-grid-col--6 siimple-grid-col--sm-6">
-                      <div class="siimple-h2">Result - SageMaker</div>
-                        <div class="siimple-list">
-                            <div class="siimple-list-item" v-for="result in results_classification">{{ result }}</div>
-                        </div>
-                      <div class="siimple-h2">Result - Rekognition</div>
-                        <div class="siimple-list">
-                            <div class="siimple-list-item" v-for="result in results_rekognition">{{ result }}</div>
-                        </div>
+                    <div class="siimple-list">
+                        <div class="siimple-list-item" v-for="result in results_rekognition">{{ result }}</div>
+                    </div>
                   </div>
               </div>
           </div>
