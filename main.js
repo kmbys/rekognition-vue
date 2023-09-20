@@ -28,11 +28,9 @@ let app = new Vue({
         }
       };
 
-      this.results_rekognition = ["犬", "猫", "コップ"]
-      /*
       axios
         .post(
-          "https://<<YOUR ENDPOINT URL>>/api/rekognition",
+          "https://atq8nfod0j.execute-api.ap-northeast-1.amazonaws.com/api/rekognition",
           this.image,
           config
         )
@@ -42,7 +40,6 @@ let app = new Vue({
         .catch(error => {
             console.log(error);
         });
-      */
     }
   }
 })
